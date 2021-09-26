@@ -1,0 +1,5 @@
+api.openweathermap.org/data/2.5/weather?q=mumbai&appid=a38e65d196b7becc74033c4b3359dd2d
+
+pexels api key
+563492ad6f91700001000001eae119493c3448e8acd9c8a79ad2b4ed
+https://api.pexels.com/v1/

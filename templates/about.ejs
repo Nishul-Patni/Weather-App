@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../public/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+
+    <%- include ('partials/nav.ejs') %>
+
+    <div id="main-content">
+        <div id="ls">
+            <h1 class="p-h">Nishul Patni</h1>
+            <ul>
+                <li class="p-p about-points invisible">Student</li>
+                <li class="p-p about-points invisible">Heavy lerner</li>
+                <li class="p-p about-points invisible">Cute</li>
+            </ul>
+        </div>
+        <div id="rs">
+            <img src="../public/images/Boy.png" class="w-100" alt="someone">
+        </div>
+    </div>
+
+    <%- include ('partials/footer.ejs') %>
+
+
+    <script src="../public/scripts/about.js"></script>
+    <script src="../public/scripts/navbar.js"></script>
+    <script>
+        var cloc = location.href;
+        var navLink = document.querySelectorAll(".nav-link");
+        for(let i=0; i<navLink.length; i++){
+            if(navLink[i].href == cloc){
+                navLink[i].className = "nav-link active-link"
+            }
+        }
+    </script>
+</body>
+</html>
